@@ -26,9 +26,9 @@ public class ObjectFactory {
 
     private final static QName _ReportRequest_QNAME = new QName("http://www.niso.org/schemas/sushi", "ReportRequest");
     private final static QName _ReportResponse_QNAME = new QName("http://www.niso.org/schemas/sushi", "ReportResponse");
-    private final static QName _CustomerReferenceName_QNAME = new QName("http://www.niso.org/schemas/sushi", "Name");
     private final static QName _ExceptionData_QNAME = new QName("http://www.niso.org/schemas/sushi", "Data");
     private final static QName _ExceptionHelpUrl_QNAME = new QName("http://www.niso.org/schemas/sushi", "HelpUrl");
+    private final static QName _CustomerReferenceName_QNAME = new QName("http://www.niso.org/schemas/sushi", "Name");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.niso.schemas.sushi
@@ -128,15 +128,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.niso.org/schemas/sushi", name = "Name", scope = CustomerReference.class)
-    public JAXBElement<String> createCustomerReferenceName(String value) {
-        return new JAXBElement<String>(_CustomerReferenceName_QNAME, String.class, CustomerReference.class, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Object }{@code >}}
      * 
      */
@@ -152,6 +143,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://www.niso.org/schemas/sushi", name = "HelpUrl", scope = Exception.class)
     public JAXBElement<String> createExceptionHelpUrl(String value) {
         return new JAXBElement<String>(_ExceptionHelpUrl_QNAME, String.class, Exception.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.niso.org/schemas/sushi", name = "Name", scope = CustomerReference.class)
+    public JAXBElement<String> createCustomerReferenceName(String value) {
+        return new JAXBElement<String>(_CustomerReferenceName_QNAME, String.class, CustomerReference.class, value);
     }
 
 }

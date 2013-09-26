@@ -29,6 +29,8 @@
                   <wsdlLocation>classpath:counter_sushi4_0.wsdl</wsdlLocation>
                   <extraargs>
                     <extraarg>-impl</extraarg>
+                    <extraarg>-p</extraarg>
+                    <extraarg>SushiService=com.safaribooks.ifpress.amx.reporting.sushiservice</extraarg>
                   </extraargs>
                 </wsdlOption>             
               </wsdlOptions>
