@@ -15,4 +15,4 @@ Any changes to the API should be made to the packaged WSDL/XSD files and then wi
 
 ## Included service implementation
 
-The included service impl `SushiServiceInterfaceImpl` is provided only to show the propert JAX-WS annotation bindings that should be applied to any actual implementation.  Any implementation should be included in a separate library/project.
+The included service impl `SushiServiceInterfaceImpl` is provided only to show the proper JAX-WS annotation bindings that should be applied to any actual implementation.  Any implementation should be included in a separate library/project.
