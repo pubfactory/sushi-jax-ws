@@ -54,9 +54,9 @@ public class Exception {
     protected ExceptionSeverity severity;
     @XmlElement(name = "Message", required = true)
     protected String message;
-    @XmlElementRef(name = "HelpUrl", namespace = "http://www.niso.org/schemas/sushi", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "HelpUrl", namespace = "http://www.niso.org/schemas/sushi", type = JAXBElement.class)
     protected JAXBElement<String> helpUrl;
-    @XmlElementRef(name = "Data", namespace = "http://www.niso.org/schemas/sushi", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "Data", namespace = "http://www.niso.org/schemas/sushi", type = JAXBElement.class)
     protected JAXBElement<Object> data;
     @XmlAttribute(name = "Created")
     @XmlSchemaType(name = "dateTime")
@@ -147,7 +147,7 @@ public class Exception {
      *     
      */
     public void setHelpUrl(JAXBElement<String> value) {
-        this.helpUrl = value;
+        this.helpUrl = ((JAXBElement<String> ) value);
     }
 
     /**
@@ -171,7 +171,7 @@ public class Exception {
      *     
      */
     public void setData(JAXBElement<Object> value) {
-        this.data = value;
+        this.data = ((JAXBElement<Object> ) value);
     }
 
     /**

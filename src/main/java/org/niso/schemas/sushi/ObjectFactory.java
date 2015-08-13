@@ -26,9 +26,9 @@ public class ObjectFactory {
 
     private final static QName _ReportRequest_QNAME = new QName("http://www.niso.org/schemas/sushi", "ReportRequest");
     private final static QName _ReportResponse_QNAME = new QName("http://www.niso.org/schemas/sushi", "ReportResponse");
-    private final static QName _ExceptionData_QNAME = new QName("http://www.niso.org/schemas/sushi", "Data");
-    private final static QName _ExceptionHelpUrl_QNAME = new QName("http://www.niso.org/schemas/sushi", "HelpUrl");
     private final static QName _CustomerReferenceName_QNAME = new QName("http://www.niso.org/schemas/sushi", "Name");
+    private final static QName _ExceptionHelpUrl_QNAME = new QName("http://www.niso.org/schemas/sushi", "HelpUrl");
+    private final static QName _ExceptionData_QNAME = new QName("http://www.niso.org/schemas/sushi", "Data");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.niso.schemas.sushi
@@ -38,27 +38,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReportDefinition }
+     * Create an instance of {@link CustomerReference }
      * 
      */
-    public ReportDefinition createReportDefinition() {
-        return new ReportDefinition();
-    }
-
-    /**
-     * Create an instance of {@link ReportRequest }
-     * 
-     */
-    public ReportRequest createReportRequest() {
-        return new ReportRequest();
-    }
-
-    /**
-     * Create an instance of {@link ReportResponse }
-     * 
-     */
-    public ReportResponse createReportResponse() {
-        return new ReportResponse();
+    public CustomerReference createCustomerReference() {
+        return new CustomerReference();
     }
 
     /**
@@ -67,30 +51,6 @@ public class ObjectFactory {
      */
     public Exception createException() {
         return new Exception();
-    }
-
-    /**
-     * Create an instance of {@link Range }
-     * 
-     */
-    public Range createRange() {
-        return new Range();
-    }
-
-    /**
-     * Create an instance of {@link Activity }
-     * 
-     */
-    public Activity createActivity() {
-        return new Activity();
-    }
-
-    /**
-     * Create an instance of {@link CustomerReference }
-     * 
-     */
-    public CustomerReference createCustomerReference() {
-        return new CustomerReference();
     }
 
     /**
@@ -107,6 +67,46 @@ public class ObjectFactory {
      */
     public ReportDefinition.Filters createReportDefinitionFilters() {
         return new ReportDefinition.Filters();
+    }
+
+    /**
+     * Create an instance of {@link Activity }
+     * 
+     */
+    public Activity createActivity() {
+        return new Activity();
+    }
+
+    /**
+     * Create an instance of {@link Range }
+     * 
+     */
+    public Range createRange() {
+        return new Range();
+    }
+
+    /**
+     * Create an instance of {@link ReportResponse }
+     * 
+     */
+    public ReportResponse createReportResponse() {
+        return new ReportResponse();
+    }
+
+    /**
+     * Create an instance of {@link ReportDefinition }
+     * 
+     */
+    public ReportDefinition createReportDefinition() {
+        return new ReportDefinition();
+    }
+
+    /**
+     * Create an instance of {@link ReportRequest }
+     * 
+     */
+    public ReportRequest createReportRequest() {
+        return new ReportRequest();
     }
 
     /**
@@ -128,12 +128,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Object }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.niso.org/schemas/sushi", name = "Data", scope = Exception.class)
-    public JAXBElement<Object> createExceptionData(Object value) {
-        return new JAXBElement<Object>(_ExceptionData_QNAME, Object.class, Exception.class, value);
+    @XmlElementDecl(namespace = "http://www.niso.org/schemas/sushi", name = "Name", scope = CustomerReference.class)
+    public JAXBElement<String> createCustomerReferenceName(String value) {
+        return new JAXBElement<String>(_CustomerReferenceName_QNAME, String.class, CustomerReference.class, value);
     }
 
     /**
@@ -146,12 +146,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Object }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.niso.org/schemas/sushi", name = "Name", scope = CustomerReference.class)
-    public JAXBElement<String> createCustomerReferenceName(String value) {
-        return new JAXBElement<String>(_CustomerReferenceName_QNAME, String.class, CustomerReference.class, value);
+    @XmlElementDecl(namespace = "http://www.niso.org/schemas/sushi", name = "Data", scope = Exception.class)
+    public JAXBElement<Object> createExceptionData(Object value) {
+        return new JAXBElement<Object>(_ExceptionData_QNAME, Object.class, Exception.class, value);
     }
 
 }

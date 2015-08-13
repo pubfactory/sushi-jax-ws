@@ -25,8 +25,8 @@ import org.niso.schemas.sushi.ReportRequest;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _ReportRequest_QNAME = new QName("http://www.niso.org/schemas/sushi/counter", "ReportRequest");
     private final static QName _ReportResponse_QNAME = new QName("http://www.niso.org/schemas/sushi/counter", "ReportResponse");
+    private final static QName _ReportRequest_QNAME = new QName("http://www.niso.org/schemas/sushi/counter", "ReportRequest");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.niso.schemas.sushi.counter
@@ -44,21 +44,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReportRequest }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.niso.org/schemas/sushi/counter", name = "ReportRequest")
-    public JAXBElement<ReportRequest> createReportRequest(ReportRequest value) {
-        return new JAXBElement<ReportRequest>(_ReportRequest_QNAME, ReportRequest.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CounterReportResponse }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://www.niso.org/schemas/sushi/counter", name = "ReportResponse")
     public JAXBElement<CounterReportResponse> createReportResponse(CounterReportResponse value) {
         return new JAXBElement<CounterReportResponse>(_ReportResponse_QNAME, CounterReportResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReportRequest }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.niso.org/schemas/sushi/counter", name = "ReportRequest")
+    public JAXBElement<ReportRequest> createReportRequest(ReportRequest value) {
+        return new JAXBElement<ReportRequest>(_ReportRequest_QNAME, ReportRequest.class, null, value);
     }
 
 }

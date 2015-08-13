@@ -40,7 +40,7 @@ public class CustomerReference {
 
     @XmlElement(name = "ID", required = true)
     protected String id;
-    @XmlElementRef(name = "Name", namespace = "http://www.niso.org/schemas/sushi", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "Name", namespace = "http://www.niso.org/schemas/sushi", type = JAXBElement.class)
     protected JAXBElement<String> name;
 
     /**
@@ -88,7 +88,7 @@ public class CustomerReference {
      *     
      */
     public void setName(JAXBElement<String> value) {
-        this.name = value;
+        this.name = ((JAXBElement<String> ) value);
     }
 
 }
