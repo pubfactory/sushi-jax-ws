@@ -38,43 +38,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CustomerReference }
+     * Create an instance of {@link ReportDefinition }
      * 
      */
-    public CustomerReference createCustomerReference() {
-        return new CustomerReference();
-    }
-
-    /**
-     * Create an instance of {@link Exception }
-     * 
-     */
-    public Exception createException() {
-        return new Exception();
-    }
-
-    /**
-     * Create an instance of {@link Requestor }
-     * 
-     */
-    public Requestor createRequestor() {
-        return new Requestor();
-    }
-
-    /**
-     * Create an instance of {@link ReportDefinition.Filters }
-     * 
-     */
-    public ReportDefinition.Filters createReportDefinitionFilters() {
-        return new ReportDefinition.Filters();
-    }
-
-    /**
-     * Create an instance of {@link Activity }
-     * 
-     */
-    public Activity createActivity() {
-        return new Activity();
+    public ReportDefinition createReportDefinition() {
+        return new ReportDefinition();
     }
 
     /**
@@ -94,11 +62,35 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReportDefinition }
+     * Create an instance of {@link CustomerReference }
      * 
      */
-    public ReportDefinition createReportDefinition() {
-        return new ReportDefinition();
+    public CustomerReference createCustomerReference() {
+        return new CustomerReference();
+    }
+
+    /**
+     * Create an instance of {@link Requestor }
+     * 
+     */
+    public Requestor createRequestor() {
+        return new Requestor();
+    }
+
+    /**
+     * Create an instance of {@link Exception }
+     * 
+     */
+    public Exception createException() {
+        return new Exception();
+    }
+
+    /**
+     * Create an instance of {@link ReportDefinition.Filters }
+     * 
+     */
+    public ReportDefinition.Filters createReportDefinitionFilters() {
+        return new ReportDefinition.Filters();
     }
 
     /**
@@ -107,6 +99,14 @@ public class ObjectFactory {
      */
     public ReportRequest createReportRequest() {
         return new ReportRequest();
+    }
+
+    /**
+     * Create an instance of {@link Activity }
+     * 
+     */
+    public Activity createActivity() {
+        return new Activity();
     }
 
     /**

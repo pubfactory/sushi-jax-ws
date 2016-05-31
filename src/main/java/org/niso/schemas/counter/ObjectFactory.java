@@ -42,27 +42,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReportItem }
+     * Create an instance of {@link Identifier }
      * 
      */
-    public ReportItem createReportItem() {
-        return new ReportItem();
+    public Identifier createIdentifier() {
+        return new Identifier();
     }
 
     /**
-     * Create an instance of {@link PerformanceCounter }
+     * Create an instance of {@link Consortium }
      * 
      */
-    public PerformanceCounter createPerformanceCounter() {
-        return new PerformanceCounter();
-    }
-
-    /**
-     * Create an instance of {@link IPAddress }
-     * 
-     */
-    public IPAddress createIPAddress() {
-        return new IPAddress();
+    public Consortium createConsortium() {
+        return new Consortium();
     }
 
     /**
@@ -74,59 +66,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link org.niso.schemas.counter.Customer }
+     * Create an instance of {@link PerformanceCounter }
      * 
      */
-    public org.niso.schemas.counter.Customer createCustomer() {
-        return new org.niso.schemas.counter.Customer();
-    }
-
-    /**
-     * Create an instance of {@link DateRange }
-     * 
-     */
-    public DateRange createDateRange() {
-        return new DateRange();
-    }
-
-    /**
-     * Create an instance of {@link Identifier }
-     * 
-     */
-    public Identifier createIdentifier() {
-        return new Identifier();
-    }
-
-    /**
-     * Create an instance of {@link Report.Customer }
-     * 
-     */
-    public Report.Customer createReportCustomer() {
-        return new Report.Customer();
-    }
-
-    /**
-     * Create an instance of {@link Reports }
-     * 
-     */
-    public Reports createReports() {
-        return new Reports();
-    }
-
-    /**
-     * Create an instance of {@link Contact }
-     * 
-     */
-    public Contact createContact() {
-        return new Contact();
-    }
-
-    /**
-     * Create an instance of {@link Metric }
-     * 
-     */
-    public Metric createMetric() {
-        return new Metric();
+    public PerformanceCounter createPerformanceCounter() {
+        return new PerformanceCounter();
     }
 
     /**
@@ -138,11 +82,67 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Consortium }
+     * Create an instance of {@link Reports }
      * 
      */
-    public Consortium createConsortium() {
-        return new Consortium();
+    public Reports createReports() {
+        return new Reports();
+    }
+
+    /**
+     * Create an instance of {@link DateRange }
+     * 
+     */
+    public DateRange createDateRange() {
+        return new DateRange();
+    }
+
+    /**
+     * Create an instance of {@link Metric }
+     * 
+     */
+    public Metric createMetric() {
+        return new Metric();
+    }
+
+    /**
+     * Create an instance of {@link Contact }
+     * 
+     */
+    public Contact createContact() {
+        return new Contact();
+    }
+
+    /**
+     * Create an instance of {@link IPAddress }
+     * 
+     */
+    public IPAddress createIPAddress() {
+        return new IPAddress();
+    }
+
+    /**
+     * Create an instance of {@link Report.Customer }
+     * 
+     */
+    public Report.Customer createReportCustomer() {
+        return new Report.Customer();
+    }
+
+    /**
+     * Create an instance of {@link ReportItem }
+     * 
+     */
+    public ReportItem createReportItem() {
+        return new ReportItem();
+    }
+
+    /**
+     * Create an instance of {@link org.niso.schemas.counter.Customer }
+     * 
+     */
+    public org.niso.schemas.counter.Customer createCustomer() {
+        return new org.niso.schemas.counter.Customer();
     }
 
     /**
