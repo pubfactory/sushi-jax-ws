@@ -32,10 +32,10 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="image"/>
  *     &lt;enumeration value="podcast"/>
  *     &lt;enumeration value="multimedia"/>
- *     &lt;enumeration value="record_view"/>
- *     &lt;enumeration value="result_click"/>
- *     &lt;enumeration value="search_reg"/>
- *     &lt;enumeration value="search_fed"/>
+ *     &lt;enumeration value="record_views"/>
+ *     &lt;enumeration value="result_clicks"/>
+ *     &lt;enumeration value="searches_reg"/>
+ *     &lt;enumeration value="searches_fed"/>
  *     &lt;enumeration value="turnaway"/>
  *     &lt;enumeration value="no_license"/>
  *     &lt;enumeration value="other"/>
@@ -84,14 +84,14 @@ public enum MetricType {
     PODCAST("podcast"),
     @XmlEnumValue("multimedia")
     MULTIMEDIA("multimedia"),
-    @XmlEnumValue("record_view")
-    RECORD_VIEW("record_view"),
-    @XmlEnumValue("result_click")
-    RESULT_CLICK("result_click"),
-    @XmlEnumValue("search_reg")
-    SEARCH_REG("search_reg"),
-    @XmlEnumValue("search_fed")
-    SEARCH_FED("search_fed"),
+    @XmlEnumValue("record_views")
+    RECORD_VIEW("record_views"),
+    @XmlEnumValue("result_clicks")
+    RESULT_CLICK("result_clicks"),
+    @XmlEnumValue("searches_reg")
+    SEARCH_REG("searches_reg"),
+    @XmlEnumValue("searches_fed")
+    SEARCH_FED("searches_fed"),
     @XmlEnumValue("turnaway")
     TURNAWAY("turnaway"),
     @XmlEnumValue("no_license")
